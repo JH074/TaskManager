@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">✓</span>
+            <span>TaskManager</span>
+        </div>
+
+        <div class="user">
+            <div class="avatar">JL</div>
+            <span>Usuario</span>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <div>
+                <p class="eyebrow">Panel de tareas</p>
+                <h1>Mis tareas</h1>
+                <p class="subtitle">
+                    Organiza tus actividades y mantén todo bajo control.
+                </p>
+            </div>
+
+            <button class="btn-primary" id="newTaskBtn">
+                + Nueva tarea
+            </button>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-label">Tareas totales</span>
+                <strong id="totalTasks">8</strong>
+                <span class="stat-info">Registradas</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">Pendientes</span>
+                <strong id="pendingTasks">3</strong>
+                <span class="stat-info">Por completar</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">Completadas</span>
+                <strong id="completedTasks">5</strong>
+                <span class="stat-info">Finalizadas</span>
+            </div>
+
+        </section>
+
+        <section class="tasks-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Tareas recientes</h2>
+                    <p>Revisa tus actividades pendientes.</p>
+                </div>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar tarea..."
+                >
+            </div>
+
+            <div class="task-list" id="taskList">
+
+                <article class="task completed">
+                    <div class="task-check">✓</div>
+                    <div class="task-content">
+                        <h3>Configurar repositorio</h3>
+                        <p>Crear el repositorio inicial del proyecto.</p>
+                    </div>
+                    <span class="task-status">Completada</span>
+                </article>
+
+                <article class="task completed">
+                    <div class="task-check">✓</div>
+                    <div class="task-content">
+                        <h3>Diseñar interfaz</h3>
+                        <p>Crear el diseño principal de TaskManager.</p>
+                    </div>
+                    <span class="task-status">Completada</span>
+                </article>
+
+                <article class="task pending">
+                    <div class="task-check"></div>
+                    <div class="task-content">
+                        <h3>Crear formulario</h3>
+                        <p>Agregar formulario para registrar nuevas tareas.</p>
+                    </div>
+                    <span class="task-status">Pendiente</span>
+                </article>
+
+                <article class="task pending">
+                    <div class="task-check"></div>
+                    <div class="task-content">
+                        <h3>Agregar filtros</h3>
+                        <p>Permitir filtrar tareas por estado.</p>
+                    </div>
+                    <span class="task-status">Pendiente</span>
+                </article>
+
+                <article class="task pending">
+                    <div class="task-check"></div>
+                    <div class="task-content">
+                        <h3>Realizar pruebas</h3>
+                        <p>Verificar el funcionamiento de las tareas.</p>
+                    </div>
+                    <span class="task-status">Pendiente</span>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>TaskManager</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
