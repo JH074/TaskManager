@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskManager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -66,11 +68,7 @@
                     <p>Revisa tus actividades pendientes.</p>
                 </div>
 
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Buscar tarea..."
-                >
+                <input type="text" id="searchInput" placeholder="Buscar tarea...">
             </div>
 
             <div class="task-list" id="taskList">
@@ -95,10 +93,13 @@
 
                 <article class="task pending">
                     <div class="task-check"></div>
+
                     <div class="task-content">
                         <h3>Crear formulario</h3>
                         <p>Agregar formulario para registrar nuevas tareas.</p>
+                        <span class="priority high">Prioridad alta</span>
                     </div>
+
                     <span class="task-status">Pendiente</span>
                 </article>
 
@@ -131,4 +132,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
